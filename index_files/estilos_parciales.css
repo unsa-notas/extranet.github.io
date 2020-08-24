@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background:#EFEFE7;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	}
+#ingreso{
+	background: url('../ico_user.png') no-repeat #DAD5C2;
+}
+#error{
+	background: url('../ico_error.png') no-repeat #DAD5C2;
+}
+#error .boton{
+	/*margin:5px 0 0 30px;*/
+	border:none;
+	background:#6E0E1F;
+	color:#FFF;
+	font-size: 10px;
+	font-weight:bold;
+	text-transform:uppercase;
+	}
+#ingreso, #error{
+	padding: 0 0 10px 70px;
+	border:#C3473F solid 2px;
+	border-radius:10px;
+	width: 300px;
+	margin:0 auto;
+	}
+#ingreso input {
+	background:#EDEAE1;
+	border-bottom:#696041 solid 1px;
+	border-left: none;
+	border-right:#696041 solid 1px;
+	border-top:none;
+	font-size: 14px;
+	padding: 5px;
+	margin-bottom: 5px;
+	}
+#ingreso .boton{
+	/*margin:5px 0 0 30px;*/
+	border:none;
+	background:#6E0E1F;
+	color:#FFF;
+	font-size: 10px;
+	font-weight:bold;
+	text-transform:uppercase;
+	cursor:pointer;
+	}
+h2{
+	border-radius:6px;
+	font-size:16px;
+	color:#fff;
+	background:#C3473F;
+	padding: 5px 10px;
+	font-weight:bold;
+	}
+#resultados{
+	padding: 10px;
+	background: #DAD5C2;
+	border:#FFF solid 2px;
+	border-radius:10px;
+	width: 650px;
+	margin:0 auto;
+	}
+#resultados h3{
+	color:#fff;
+	font-weight:normal;
+	background:#C3473F;
+	margin:0 0 10px 0;
+	padding: 5px 10px;
+	}
+	#resul_tab {
+	font-size:11px;
+	background:#FFF;
+	margin-top: 15px;
+	border-bottom: #6E0E1F solid 4px;
+	}
+#resul_tab tr:hover {
+	background:#EDEAE1;
+	}
+#resul_tab th{
+	background:#BEB694;
+	padding: 5px;
+	border-bottom: #6E0E1F solid 2px;
+	}
+#resul_tab td{
+	border-bottom: #6E0E1F solid 1px;
+	padding: 3px;
+	#text-align:center;
+	border-left: #EDEAE1 solid 1px
+	}
+#resul_tab td.curso{
+	text-align:left;
+}
+.dato{
+	font-weight:bold;
+	color: #6E0E1F;
+}
+#tbl_login {
+	margin: auto;
+	padding: 0px 10px;
+}
+#captcha_container {
+  display: inline-flex; /* make element size relative to content */
+  align-items: center; /* vertical alignment of items */
+}
+#new_captcha {
+  height: 28px;
+	border-radius: 3px;
+}
+#load_captcha {
+  color:#C3473F;
+  cursor: pointer;
+}
+#text_captcha {
+	margin-top: 5px;
+	text-align: center;
+}
+form input[type=text],form input[type=password] {
+	 text-align:center;
+}

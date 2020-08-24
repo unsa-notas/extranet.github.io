@@ -1,0 +1,145 @@
+
+<!-- saved from url=(0074)file:///D:/Projects/Nueva%20carpeta/CONSULTA%20DE%20NOTAS%20PARCIALES.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CONSULTA DE NOTAS PARCIALES</title>
+<link href="./index_files/estilos_parciales.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./index_files/font-awesome.min.css" type="text/css">
+<script src="./index_files/jquery-2.2.1.min.js.descarga" type="text/javascript"></script>
+<script src="./index_files/jquery.cookie.min.js.descarga" type="text/javascript"></script>
+
+<link href="./index_files/icon-captcha.min.css" rel="stylesheet" type="text/css">
+<link href="./index_files/css" rel="stylesheet">
+<script src="./index_files/icon-captcha.min.js.descarga" type="text/javascript"></script>
+
+
+<!-- Initialize the IconCaptcha -->
+<script async="" type="text/javascript">
+
+$(window).ready(function() {
+
+		$('.captcha-holder').iconCaptcha({
+
+				theme: ['light', 'dark'], // Select the theme(s) of the Captcha(s). Available: light, dark
+
+				fontFamily: '', // Change the font family of the captcha. Leaving it blank will add the default font to the end of the <body> tag.
+
+				clickDelay: 1500, // The delay during which the user can't select an image.
+
+				invalidResetDelay: 3000, // After how many milliseconds the captcha should reset after a wrong icon selection.
+
+				requestIconsDelay: 2500, // How long should the script wait before requesting the hashes and icons? (to prevent a high(er) CPU usage during a DDoS attack)
+
+				loadingAnimationDelay: 2000, // How long the fake loading animation should play.
+
+				hoverDetection: true, // Enable or disable the cursor hover detection.
+
+				showCredits: 'hide', // Show, hide or disable the credits element. Valid values: 'show', 'hide', 'disabled' (please leave it enabled).
+
+				enableLoadingAnimation: true, // Enable of disable the fake loading animation. Doesn't actually do anything other than look nice.
+
+				validationPath: 'src/captcha-request.php', // The path to the Captcha validation file.
+
+				messages: { // You can put whatever message you want in the captcha.
+
+						header: "Seleccione la imagen que no pertenece al grupo",
+
+						correct: {
+
+								top: "Bien!",
+
+								bottom: "Usted es humano"
+
+						},
+
+						incorrect: {
+
+								top: "Oops!",
+
+								bottom: "Seleccionó la imagen incorrecta"
+
+						}
+
+				}
+
+		})
+
+				.bind('init.iconCaptcha', function(e, id) { // You can bind to custom events, in case you want to execute some custom code.
+
+						console.log('Event: Captcha initialized', id);
+
+				}).bind('selected.iconCaptcha', function(e, id) {
+
+				console.log('Event: Icon selected', id);
+
+		}).bind('refreshed.iconCaptcha', function(e, id) {
+
+				console.log('Event: Captcha refreshed', id);
+
+		}).bind('success.iconCaptcha', function(e, id) {
+
+				console.log('Event: Correct input', id);
+
+		}).bind('error.iconCaptcha', function(e, id) {
+
+				console.log('Event: Wrong input', id);
+
+		});
+
+});
+
+</script>
+
+
+
+
+
+
+<script language="JavaScript">
+function Validar()
+{
+	formu = document.consulta;
+	if(formu.usuario.value=="" || formu.clave.value=="")
+		alert("Ingrese Usuario y Clave");
+	else
+		formu.submit();
+}
+
+function SoloNumeros(input)
+{
+	if(input.value.search(/^[0-9]+$/) == -1 || input.value=="" || (input.value.length>0 && input.value.length<8))
+	{
+		alert("Debe ingresar 8 Digitos");
+		input.value = "";
+		input.focus();
+	}
+}
+
+function NumerosLetras(input)
+{
+	if(input.value.search(/^[a-z0-9]+$/) == -1 || input.value=="" || (input.value.length>0 && input.value.length<8))
+	{
+		alert("Debe ingresar 8 Caracteres");
+		input.value = "";
+		input.focus();
+	}
+}
+
+function atras() {
+   $.cookie('regresar', 'true');
+   window.history.back()
+}
+</script>
+</head>
+<body>
+<h2><center>Consulta de Notas Parciales</center></h2><div id="resultados">
+		<strong>Evaluación del Proceso de Enseñanza No Presencial</strong><br><br>Estimado alumno: La presente encuesta tiene la finalidad de conocer tu opinión sobre el proceso de enseñanza no presencial durante el presente semestre, tu respuesta sincera y objetiva será de mucho valor para hacer las correcciones necesarias y podamos cumplir con tus expectativas.<br>Contamos contigo, ayúdanos a mejorar.<br>Atentamente,<br>Vicerrectorado Académico<br><br>
+		<li>Primera Parte: Información general sobre la enseñanza No Presencial --&gt; <a href="https://forms.gle/ZZhsUpn77ZvWzogB8" target="_blank">Ingrese Aqui</a> </li>
+		<li>Segunda Parte: Planificación y Contenidos de las Asignaturas --&gt; <a href="https://forms.gle/67uPokNoS2YeBWQ9A" target="_blank">Ingrese Aqui </a></li>
+	</div><div id="resultados"><strong>CUI: 20202235 [SUNI/VALLEJO, JOSE FRANCISCO]</strong></div><br><div id="resultados"><strong>CIENCIA DE LA COMPUTACIÓN</strong> Periodo: 2020-A</div><div id="resultados"><table align="center" id="resul_tab"><tbody><tr><th>Nro.</th>
+									  <th>Asignatura</th>
+						        <th>Parcial</th>
+						        <th>Grupo</th>
+						        <th>Nota</th>
+						        <th>Peso</th>
+						        <th>Ausente</th>
+								</tr><tr><td align="center">1.</td><td>RAZONAMIENTO LOGICO MATEMATICO</td><td>EVAL. CONTINUA 1</td><td align="center">B</td><td align="center">17</td><td align="center">20%</td><td align="center">No</td></tr><tr><td align="center">2.</td><td>RAZONAMIENTO LOGICO MATEMATICO</td><td>EXAMEN 1</td><td align="center">B</td><td align="center">15</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">3.</td><td>RAZONAMIENTO LOGICO MATEMATICO</td><td>EVAL. CONTINUA 2</td><td align="center">B</td><td align="center">17</td><td align="center">20%</td><td align="center">No</td></tr><tr><td align="center">4.</td><td>RAZONAMIENTO LOGICO MATEMATICO</td><td>EXAMEN 2</td><td align="center">B</td><td align="center">13</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">5.</td><td>RAZONAMIENTO LOGICO MATEMATICO</td><td>EVAL. CONTINUA 3</td><td align="center">B</td><td align="center">16</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">6.</td><td>RAZONAMIENTO LOGICO MATEMATICO</td><td>EXAMEN 3</td><td align="center">B</td><td align="center">15</td><td align="center">15%</td><td align="center">No</td></tr><tr><td colspan="8"><font color="maroon"><b>&nbsp;</b></font></td></tr><tr><td align="center">7.</td><td>METODOLOGIA DEL TRABAJO INTELECTUAL UNIVERSITARIO</td><td>EVAL. CONTINUA 1</td><td align="center">B</td><td align="center">17</td><td align="center">30%</td><td align="center">No</td></tr><tr><td align="center">8.</td><td>METODOLOGIA DEL TRABAJO INTELECTUAL UNIVERSITARIO</td><td>EVAL. CONTINUA 2</td><td align="center">B</td><td align="center">15</td><td align="center">30%</td><td align="center">No</td></tr><tr><td align="center">9.</td><td>METODOLOGIA DEL TRABAJO INTELECTUAL UNIVERSITARIO</td><td>EVAL. CONTINUA 3</td><td align="center">B</td><td align="center">15</td><td align="center">40%</td><td align="center">No</td></tr><tr><td colspan="8"><font color="maroon"><b>&nbsp;</b></font></td></tr><tr><td align="center">10.</td><td>ARTE COMPUTACIONAL</td><td>EVAL. CONTINUA 1</td><td align="center">B</td><td align="center">17</td><td align="center">9%</td><td align="center">No</td></tr><tr><td align="center">11.</td><td>ARTE COMPUTACIONAL</td><td>EXAMEN 1</td><td align="center">B</td><td align="center">14</td><td align="center">20%</td><td align="center">No</td></tr><tr><td align="center">12.</td><td>ARTE COMPUTACIONAL</td><td>EVAL. CONTINUA 2</td><td align="center">B</td><td align="center">15</td><td align="center">9%</td><td align="center">No</td></tr><tr><td align="center">13.</td><td>ARTE COMPUTACIONAL</td><td>EXAMEN 2</td><td align="center">B</td><td align="center">13</td><td align="center">20%</td><td align="center">No</td></tr><tr><td align="center">14.</td><td>ARTE COMPUTACIONAL</td><td>EVAL. CONTINUA 3</td><td align="center">B</td><td align="center">16</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">15.</td><td>ARTE COMPUTACIONAL</td><td>EXAMEN 3</td><td align="center">B</td><td align="center">14</td><td align="center">27%</td><td align="center">No</td></tr><tr><td colspan="8"><font color="maroon"><b>&nbsp;</b></font></td></tr><tr><td align="center">16.</td><td>INGLES TECNICO PROFESIONAL I</td><td>EVAL. CONTINUA 1</td><td align="center">B</td><td align="center">18</td><td align="center">20%</td><td align="center">No</td></tr><tr><td align="center">17.</td><td>INGLES TECNICO PROFESIONAL I</td><td>EXAMEN 1</td><td align="center">B</td><td align="center">17</td><td align="center">10%</td><td align="center">No</td></tr><tr><td align="center">18.</td><td>INGLES TECNICO PROFESIONAL I</td><td>EVAL. CONTINUA 2</td><td align="center">B</td><td align="center">16</td><td align="center">20%</td><td align="center">No</td></tr><tr><td align="center">19.</td><td>INGLES TECNICO PROFESIONAL I</td><td>EXAMEN 2</td><td align="center">B</td><td align="center">17</td><td align="center">10%</td><td align="center">No</td></tr><tr><td align="center">20.</td><td>INGLES TECNICO PROFESIONAL I</td><td>EVAL. CONTINUA 3</td><td align="center">B</td><td align="center">15</td><td align="center">25%</td><td align="center">No</td></tr><tr><td align="center">21.</td><td>INGLES TECNICO PROFESIONAL I</td><td>EXAMEN 3</td><td align="center">B</td><td align="center">16</td><td align="center">15%</td><td align="center">No</td></tr><tr><td colspan="8"><font color="maroon"><b>&nbsp;</b></font></td></tr><tr><td align="center">22.</td><td>FUNDAMENTOS DE COMPUTACION</td><td>EVAL. CONTINUA 1</td><td align="center">B</td><td align="center">17</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">23.</td><td>FUNDAMENTOS DE COMPUTACION</td><td>EXAMEN 1</td><td align="center">B</td><td align="center">14</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">24.</td><td>FUNDAMENTOS DE COMPUTACION</td><td>EVAL. CONTINUA 2</td><td align="center">B</td><td align="center">15</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">25.</td><td>FUNDAMENTOS DE COMPUTACION</td><td>EXAMEN 2</td><td align="center">B</td><td align="center">15</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">26.</td><td>FUNDAMENTOS DE COMPUTACION</td><td>EVAL. CONTINUA 3</td><td align="center">B</td><td align="center">14</td><td align="center">20%</td><td align="center">No</td></tr><tr><td align="center">27.</td><td>FUNDAMENTOS DE COMPUTACION</td><td>EXAMEN 3</td><td align="center">B</td><td align="center">16</td><td align="center">20%</td><td align="center">No</td></tr><tr><td colspan="8"><font color="maroon"><b>&nbsp;</b></font></td></tr><tr><td align="center">28.</td><td>ESTRUCTURAS DISCRETAS I</td><td>EVAL. CONTINUA 1</td><td align="center">A</td><td align="center">13</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">29.</td><td>ESTRUCTURAS DISCRETAS I</td><td>EXAMEN 1</td><td align="center">A</td><td align="center">9</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">30.</td><td>ESTRUCTURAS DISCRETAS I</td><td>EVAL. CONTINUA 2</td><td align="center">A</td><td align="center">14</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">31.</td><td>ESTRUCTURAS DISCRETAS I</td><td>EXAMEN 2</td><td align="center">A</td><td align="center">11</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">32.</td><td>ESTRUCTURAS DISCRETAS I</td><td>EVAL. CONTINUA 3</td><td align="center">A</td><td align="center">14</td><td align="center">20%</td><td align="center">No</td></tr><tr><td align="center">33.</td><td>ESTRUCTURAS DISCRETAS I</td><td>EXAMEN 3</td><td align="center">A</td><td align="center">12</td><td align="center">20%</td><td align="center">No</td></tr><tr><td colspan="8"><font color="maroon"><b>&nbsp;</b></font></td></tr><tr><td align="center">34.</td><td>LIDERAZGO Y ORATORIA</td><td>EVAL. CONTINUA 1</td><td align="center">B</td><td align="center">15</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">35.</td><td>LIDERAZGO Y ORATORIA</td><td>EXAMEN 1</td><td align="center">B</td><td align="center">14</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">36.</td><td>LIDERAZGO Y ORATORIA</td><td>EVAL. CONTINUA 2</td><td align="center">B</td><td align="center">17</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">37.</td><td>LIDERAZGO Y ORATORIA</td><td>EXAMEN 2</td><td align="center">B</td><td align="center">16</td><td align="center">15%</td><td align="center">No</td></tr><tr><td align="center">38.</td><td>LIDERAZGO Y ORATORIA</td><td>EVAL. CONTINUA 3</td><td align="center">B</td><td align="center">14</td><td align="center">20%</td><td align="center">No</td></tr><tr><td align="center">39.</td><td>LIDERAZGO Y ORATORIA</td><td>EXAMEN 3</td><td align="center">B</td><td align="center">16</td><td align="center">20%</td><td align="center">No</td></tr><tr><td colspan="8"><font color="maroon"><b>&nbsp;</b></font></td></tr></tbody></table></div><div id="resultados"> &nbsp; </div></body></html>
